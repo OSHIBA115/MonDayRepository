@@ -5,6 +5,7 @@ using namespace std;
 
 int main(void)
 {
+	//ÀsŠÖ”
 	Code();
 
 	return 0;

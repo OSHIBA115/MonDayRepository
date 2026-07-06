@@ -8,7 +8,7 @@ const int MAX_INDEX = 2;
 
 //関数プロトタイプ宣言
 /// <summary>
-/// 進行
+/// 実行関数
 /// </summary>
 /// <param name="Code"></param>
 void Code();

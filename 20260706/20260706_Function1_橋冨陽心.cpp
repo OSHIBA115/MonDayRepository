@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//進行
+//実行関数
 void Code()
 {
 	//変数宣言
@@ -14,6 +14,7 @@ void Code()
 	//回復が選択されたか確認
 	if (playerSelect == MIN_INDEX)
 	{
+		//回復関数の呼び出し
 		Heal(playerHP);
 	}
 	//現在HP表示
@@ -28,6 +29,7 @@ void Heal(int &heal)
 //入力チェック
 void InputCheck(int& Select)
 {
+	//入力内容が正しくなるまでループ
 	while (true)
 	{
 		//選択肢表示
@@ -38,8 +40,7 @@ void InputCheck(int& Select)
 		if (MIN_INDEX > Select || MAX_INDEX < Select)
 		{
 			//間違っていた場合、再度入力を促す
-			cout << "入力内容に誤りがあります。再度入力してください\n"
-				<< endl;
+			cout << "入力内容に誤りがあります。再度入力してください\n" << endl;
 		}
 		else
 		{
