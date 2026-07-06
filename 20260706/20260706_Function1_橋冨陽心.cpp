@@ -3,43 +3,47 @@
 
 using namespace std;
 
+//進行
 void Code()
 {
+	//変数宣言
 	int playerHP = HP_MAX;
 	int playerSelect;
-
+	//入力チェック
 	InputCheck(playerSelect);
-
+	//回復が選択されたか確認
 	if (playerSelect == MIN_INDEX)
 	{
 		Heal(playerHP);
 	}
-
+	//現在HP表示
 	cout << "現在のあなたのHPは " << playerHP << " です。" << endl;
 }
-
+//回復
 void Heal(int &heal)
 {
+	//HP回復
 	heal += RECOVERY_AMOUNT;
 }
-
+//入力チェック
 void InputCheck(int& Select)
 {
 	while (true)
 	{
-		//入力
-
+		//選択肢表示
 		cout << "HPを回復する場合：１　回復しない場合：２　を選択してください。\n" << endl;
-
+		//入力
 		cin >> Select;
-
+		//入力内容確認
 		if (MIN_INDEX > Select || MAX_INDEX < Select)
 		{
+			//間違っていた場合、再度入力を促す
 			cout << "入力内容に誤りがあります。再度入力してください\n"
 				<< endl;
 		}
 		else
 		{
+			//合っていた場合ループを抜ける
 			break;
 		}
 	}

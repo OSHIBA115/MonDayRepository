@@ -7,6 +7,20 @@ const int MIN_INDEX = 1;
 const int MAX_INDEX = 2;
 
 //関数プロトタイプ宣言
+/// <summary>
+/// 進行
+/// </summary>
+/// <param name="Code"></param>
 void Code();
+
+/// <summary>
+/// 回復関数
+/// </summary>
+/// <param name="heal"></param>
 void Heal(int& heal);
+
+/// <summary>
+/// 入力チェック
+/// </summary>
+/// <param name="Select"></param>
 void InputCheck(int& Select);
