@@ -19,8 +19,7 @@ void Game()
 	{
 		//入力・入力チェック
 		InputCheck(PL);
-		//乱数初期化
-		srand((unsigned int)time(NULL));
+		
 		//CPU選択
 		CSelect = rand() % HAND_INDEX_MAX;
 		//勝負結果

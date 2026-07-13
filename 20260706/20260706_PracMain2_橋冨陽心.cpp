@@ -8,6 +8,9 @@ using namespace std;
 //Main
 int main(void)
 {
+	//—”‰Šú‰»
+	srand((unsigned int)time(NULL));
+
 	Game();
 
 	return 0;
