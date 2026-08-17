@@ -1,0 +1,4 @@
+#pragma once
+
+//関数プロトタイプ宣言
+void StartGame();
