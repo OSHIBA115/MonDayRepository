@@ -3,6 +3,7 @@ using namespace std;
 
 #include "20260817_Prac1_header.h"
 
+//‹…Ží•\Ž¦
 void PitingType(int piting)
 {
 
@@ -24,7 +25,7 @@ void PitingType(int piting)
 	}
 }
 
-
+//Ÿ”s•\Ž¦
 void Result(int out)
 {
 	if (out >= 3)
