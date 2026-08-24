@@ -6,7 +6,19 @@ void Multiples(int* pnum, int elements)
 {
 	int multiples;//”{”•Û‘¶
 
+	cout << "‰½”{‚µ‚Ü‚·‚©H" << endl;
 	cin >> multiples;//”{”“ü—Í
+
+	cout << "\n"
+		<< "•ÏX‘O" << endl;
+
+	for (int i = 0; i < elements; i++)//—v‘f”ŒJ‚è•Ô‚µ
+	{
+		cout << *(pnum + i) << endl;//•\¦
+	}
+
+	cout << "\n"
+		<< "•ÏXŒã" << endl;
 
 	for (int i = 0; i < elements; i++)//—v‘f”ŒJ‚è•Ô‚µ
 	{
