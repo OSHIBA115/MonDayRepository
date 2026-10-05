@@ -14,21 +14,6 @@ public:
 
 };
 
-//”h¶ƒNƒ‰ƒX
-class Player:public Character
-{
-public:
-	Player(int hp,int attack,int defence,int evasion)
-	{
-		HP = hp;
-		Attack = attack;
-		Defense = defence;
-		Evasion = evasion;
-	}
-
-private:
-
-};
 
 class Enemy :public Character
 {
@@ -42,6 +27,7 @@ public:
 	}
 
 private:
+
 
 };
 
