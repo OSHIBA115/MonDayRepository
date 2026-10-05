@@ -11,23 +11,5 @@ protected:
 	int Evasion;
 
 public:
-
+	void StatusSet(int hp, int attack, int defence, int evasion);
 };
-
-
-class Enemy :public Character
-{
-public:
-	Enemy(int hp, int attack, int defence, int evasion)
-	{
-		HP = hp;
-		Attack = attack;
-		Defense = defence;
-		Evasion = evasion;
-	}
-
-private:
-
-
-};
-
