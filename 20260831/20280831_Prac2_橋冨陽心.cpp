@@ -4,18 +4,24 @@
 
 using namespace std;
 
-int main() {
+int main() 
+{
+    int point = 1000;
+
     ScoreManager();
     
     ScoreManager score;
 
-    score.addPoints();
+    score.resetScore();
 
-    score.deposit(1000.0);//1000円入金
-    score.withdraw(2000.0);//2000円引き出し
-    score.withdraw(5000.0); // 残高不足で失敗
+    score.displayScores();
+    
+    score.addPoints(point);
 
-    score.displayAccountInfo();//口座人名義と残高を再表示
+    score.updateHighScore();
+
+    score.displayScores();
+
 
     return 0;
 }

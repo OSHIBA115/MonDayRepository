@@ -1,37 +1,37 @@
 #pragma once
+#include <iostream>
+using namespace std;
 
 class ScoreManager
 {
 private:
-    int currentScore; // 現在のスコア
-    int highScore;    // ハイスコア
+    int currentScore = 0; // 現在のスコア
+    int highScore = 0;    // ハイスコア
 
 public:
     ScoreManager();
 
     void addPoints(int points)
     {
-
+        currentScore += points;
     }
 
     void resetScore()
     {
-
+        currentScore = 0;
     }
 
     void updateHighScore()
     {
-
+        if (currentScore > highScore)
+        {
+            currentScore = highScore;
+        }
     }
 
-    int displayCurrentScores(int currentScore) const
+    void displayScores() const
     {
-        return currentScore;
+        cout << "現在のハイスコア：\n" << currentScore 
+            << "ハイスコア：\n" << highScore << endl;
     }
-
-    int displayHighScores(int highScore) const
-    {
-        return highScore;
-    }
-
 };
