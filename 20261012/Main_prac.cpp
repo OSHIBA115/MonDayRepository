@@ -15,16 +15,29 @@ int main(void)
 	character.Attack();
 	*/
 
-	Player player("—EŽÒ");
-	Enemy enemy("ƒXƒ‰ƒCƒ€");
-	Boss boss("–‚‰¤");
+	string plName;
+	string enName;
+	string boName;
+
+	cout << "–¼‘O‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢" << endl;
+	cout << "—EŽÒ:" << endl;
+	cin >> plName;
+	cout << "“G:" << endl;
+	cin >> enName;
+	cout << "ƒ{ƒX:" << endl;
+	cin >> boName;
+
+	Player player(plName);
+	Enemy enemy(enName);
+	Boss boss(boName);
 
 	cout << player.GetName() << endl;
-	cout << enemy.GetName() << endl;
-	cout << boss.GetName() << endl;
-
 	player.Attack();
+
+	cout << enemy.GetName() << endl;
 	enemy.Attack();
+
+	cout << boss.GetName() << endl;
 	boss.Attack();
 
 	return 0;
