@@ -1,14 +1,13 @@
 #include<iostream>
-#include"Character.h"
+#include"Dog.h"
 using namespace std;
 
 int main(void)
 {
-	//コンストラクタ
-	Character character("湯たんぽ");
-	cout << character.GetName() << endl;
-
-	character.Attack();
+	Dog dog("ハス吉");
+	cout << dog.GetName() << endl;
+	
+	dog.Speak();
 
 	return 0;
 }
