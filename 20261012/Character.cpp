@@ -3,7 +3,7 @@
 
 Character::Character(std::string name)
 {
-	this->name;
+	this->name = name;
 }
 
 std::string Character::GetName()
