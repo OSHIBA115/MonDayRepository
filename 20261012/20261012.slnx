@@ -3,5 +3,9 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Folder Name="/ソリューション項目/">
+    <File Path="BattleManager.cpp" />
+    <File Path="BattleManager.h" />
+  </Folder>
   <Project Path="20261012.vcxproj" Id="3aa6961c-cb9d-4145-b845-ffb152705219" />
 </Solution>
