@@ -1,14 +1,11 @@
 #pragma once
+#include "Character.h"
 #include<string>
 
 class BattleManager
 {
-private:
-	std::string name;
 public:
-	BattleManager(std::string name);
-
-	void StartBattle(int name);
+	void StartBattle(Character*player,Character*enemy,Character*boss);
 	
 
 };

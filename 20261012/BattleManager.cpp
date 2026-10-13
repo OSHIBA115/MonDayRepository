@@ -3,14 +3,13 @@
 #include<string>
 using namespace std;
 
-BattleManager::BattleManager(std::string name)
+void BattleManager::StartBattle(Character* player, Character* enemy, Character* boss)
 {
-	this->name = name;
-}
+	cout << "勇者の名前" << player->GetName() << endl;
+	cout << "敵の名前" << enemy->GetName() << endl;
+	cout << "ボスの名前" << boss->GetName() << endl;
 
-void BattleManager::StartBattle(int name)
-{
-	cout << name << "のターン" << endl;
-
-
+	player->Attack();
+	enemy->Attack();
+	boss->Attack();
 }
